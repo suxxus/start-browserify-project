@@ -9,21 +9,13 @@
   "license": "ISC",
   "literalify": {},
   "description": "browserify project starter",
-  "prj": {
-    "title": "title",
-    "dependencies": [],
-    "styledependencies": [
-      "main.css"
-    ]
-  },
   "scripts": {
-
     "lint": "eslint --color  src || true",
     "test": "NODE_PATH=src tape src/tests | tap-colorize",
     "clean": "rm -rf ./build/* && rm -rf .tmp/*  && rm -rf ./dist/*",
     "prebuild": "npm run clean -s",
     "build:js": "NODE_PATH=src browserify -d -t babelify -t literalify src/scripts/index.js > build/bundle.js",
-    "build:markup": "jade src/index.jade --obj package.json --pretty --out build",
+    "build:markup": "cat src/*.html > build/index.html",
     "build:css": "cat src/styles/*.css > build/main.css",
     "build": "npm test -s & npm run lint -s & npm run build:js -s & npm run build:css -s & npm run build:markup -s",
     "browsersync": "browser-sync start --reload-delay 2000 --files './build/*.js' --server ./build",
@@ -46,8 +38,7 @@
     "eslint": "2.7.0",
     "eslint-cli": "1.1.0",
     "eslint-config-eslint": "3.0.0",
-    "html-minifier": "1.4.0",
-    "jade": "1.11.0",
+    "html-minifier": "1.5.0",
     "literalify": "0.4.0",
     "mock": "0.1.1",
     "sinon": "1.17.3",
