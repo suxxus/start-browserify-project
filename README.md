@@ -1,6 +1,8 @@
 # start-browserify-project
 Start a es2015 project BABEL + BROWSERIFY
 
+[![Build Status](https://travis-ci.org/suxxus/start-browserify-project.svg?branch=master)](https://travis-ci.org/suxxus/start-browserify-project)
+
 ## Features ###
 * npm scripts
 * Lint ESLINT
