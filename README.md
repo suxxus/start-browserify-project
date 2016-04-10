@@ -9,7 +9,7 @@ Start a es2015 project BABEL + BROWSERIFY
 
 ## Clone the repo & install
 ```
-git clone https://github.com/suxxus/start-node-project.git
+git clone https://github.com/suxxus/start-browserify-project.git
 cd ./start-node-project
 npm install
 ```
