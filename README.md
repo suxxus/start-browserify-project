@@ -6,6 +6,7 @@ Start a es2015 project BABEL + BROWSERIFY
 * Lint ESLINT
 * Unit testing TAPE
 * BrowserSync
+* Templating (JADE)
 
 ## Clone the repo & install
 ```
