@@ -1,5 +1,1 @@
-'use strict';
-
-module.exports = function() {
-    return true;
-};
+export default () => true;

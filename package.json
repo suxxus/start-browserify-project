@@ -11,7 +11,7 @@
   "description": "browserify project starter",
   "scripts": {
     "lint": "eslint --color  src || true",
-    "test": "NODE_PATH=src tape src/tests | tap-colorize",
+    "test": "NODE_PATH=src babel-node src/tests | tap-colorize",
     "clean": "rm -rf ./build/* && rm -rf .tmp/*  && rm -rf ./dist/*",
     "prebuild": "npm run clean -s",
     "build:js": "NODE_PATH=src browserify -d -t babelify -t literalify src/scripts/index.js > build/bundle.js",

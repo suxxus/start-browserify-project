@@ -1,2 +1,1 @@
-'use strict';
-require('tests/scripts');
+import 'tests/scripts';

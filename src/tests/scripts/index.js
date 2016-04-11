@@ -1,7 +1,5 @@
-'use strict';
-
-var test = require('tape');
-var main = require('scripts');
+import test from 'tape';
+import main from 'scripts';
 
 test('index', function(t) {
     var actual = main(),
