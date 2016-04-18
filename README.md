@@ -2,6 +2,7 @@
 Start a es2015 project BABEL + BROWSERIFY
 
 [![Build Status](https://travis-ci.org/suxxus/start-browserify-project.svg?branch=master)](https://travis-ci.org/suxxus/start-browserify-project)
+[![Code Climate](https://codeclimate.com/github/suxxus/start-browserify-project/badges/gpa.svg)](https://codeclimate.com/github/suxxus/start-browserify-project)
 
 ## Features ###
 * npm scripts
