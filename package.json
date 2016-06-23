@@ -29,6 +29,7 @@
     "prepublish": "npm run prepublish:remove && npm run prepublish:create && npm run dist",
     "prebuild": "npm run clean -s",
     "update": "updtr"
+
   },
   "devDependencies": {
     "autoprefixer": "6.3.6",
