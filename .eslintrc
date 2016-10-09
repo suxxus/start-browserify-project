@@ -1,11 +1,30 @@
 {
-  "extends": "eslint",
-  "parser": "babel-eslint",
   "env": {
     "node": true,
     "browser": true,
     "es6": true
   },
+
+  "extends": [
+    "eslint:all",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+    ],
+
+  "parser": "babel-eslint",
+
+  "settings": {
+      "import/resolver": {
+        "node":{
+          "paths":["src"]
+        }
+      }
+   },
+
+  "plugins":[
+    "eslint-plugin-import"
+  ],
+
   "rules": {
     "quotes": [
       2,
