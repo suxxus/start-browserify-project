@@ -7,7 +7,7 @@ var proxy = require('proxy-middleware'),
         return proxyOptions;
     };
 
-bs.watch('src/**/*').on('change', bs.reload);
+bs.watch('./build/*').on('change', bs.reload);
 bs.init({
     server: {
         name: 'dev',

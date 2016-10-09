@@ -1,6 +1,6 @@
 {
   "name": "start-browserify-project",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/suxxus/start-browserify-project.git"
@@ -14,10 +14,11 @@
     "build:js": "NODE_PATH=src  browserify -t browserify-handlebars -d -t babelify -t literalify src/scripts/index.js > ./build/bundle.js",
     "build:markup": "cat src/*.html > build/index.html",
     "build:css": "postcss -c postcssconfig.json",
-    "build": "npm test -s & npm run lint -s & npm run build:js -s & npm run build:css -s & npm run build:markup -s",
+    "build": "npm run test -s && npm run lint && npm run build:js -s && npm run build:css -s && npm run build:markup -s",
     "check": "npm outdated --depth=0",
     "clean": "rm -rf ./build/* && rm -rf .tmp/*  && rm -rf ./dist/*",
-    "dev": "watch -p 'src/**/*' -c 'npm run test & npm run lint'",
+    "dev": "watch -p 'src/**/*' -c 'npm run test && npm run lint'",
+    "freddie": "freddie",
     "lint": "eslint --color  src || true",
     "start": "npm run build && npm run browsersync & watch -p 'src/**/*' -c 'npm run build'",
     "test": "NODE_PATH=src babel-node src/tests | tap-colorize",
@@ -52,6 +53,7 @@
     "mock": "0.1.1",
     "postcss": "5.2.4",
     "postcss-cli": "2.6.0",
+    "proxy-middleware": "0.15.0",
     "sinon": "1.17.6",
     "tap-colorize": "1.2.0",
     "tape": "4.6.2",
@@ -63,5 +65,8 @@
     "node",
     "project",
     "browserify"
-  ]
+  ],
+  "dependencies": {
+    "tape": "4.6.2"
+  }
 }
